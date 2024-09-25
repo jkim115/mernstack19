@@ -29,6 +29,11 @@ function Accounts(name, age, balance, type) {
 	// Whatever you return from the function below will be public
 	var accountDetails = function (name, pwd) {
 		if (pwd == password) {
+			/*
+				Short Hand from ES6:
+				We can simply write variable name if the value to be assigned to
+				that variable is the same as the variable
+			*/
 			return {
 				acctName,
 				acctAge,
@@ -48,3 +53,4 @@ var acctObj = Accounts("Mark", 21, "$20000", "Credit");
 
 console.log(acctObj("Mark", "xyz"));
 console.log(acctObj("Mark", "unmatch"));
+
