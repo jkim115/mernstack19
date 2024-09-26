@@ -2,7 +2,7 @@
 function outer(name, age, dob, ssn) {
 	// we want to keep name, pwd, and dob private
 	var name = name;
-	var pwd = pwd;
+	var age = age;
 	var dob = dob;
 	var ssn = ssn;
 
@@ -12,7 +12,7 @@ function outer(name, age, dob, ssn) {
 		if (ssn_given == ssn) {
 			return {
 				name,
-				pwd,
+				age,
 				dob
 			};
 		} else {
