@@ -45,7 +45,7 @@ function Random() {
 
 	console.log(newVar)	// Interesting
 
-//	var newVar = "Very interesting"
+	var newVar = "Very interesting"
 
 	VeryRandom()	// Very interesting
 

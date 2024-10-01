@@ -12,7 +12,7 @@ var Person = {
 	}
 }
 
-// employee inherits Person class
+// employee inherits from Person that inherits from Person.prototype
 var employee = Object.create(Person)
 
 employee.salary = "$100k"
@@ -29,6 +29,13 @@ employee.getInfo = function() {
 }
 
 console.log(employee.getInfo());	// should include salary
+
+// null object
+var employeeNull = Object.create(null);
+console.log(employeeNull)	// its prototype is null
+
+employeeNull = Object.create(Person);
+console.log(employeeNull)
 
 var employeeAddress = { name: "Jay", address: "Somewhere on earth"}
 var employeePhoneNum = { name: "Jay", phoneNum: "222-222-2222"}

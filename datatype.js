@@ -26,7 +26,6 @@ console.log(typeof(newVar))
 newVar = {}
 newVar.name = "Jay"
 newVar.age = 19
-console.log(newVar)
 console.log(typeof(newVar))
 
 newVar = null
@@ -40,7 +39,7 @@ console.log(typeof(newVar))	// null is valid value; its type is "object"
 console.log(typeof(unknownVar))
 var unknownVar
 
-console.log(x)	// not defined anywhere within the scope - error
+// console.log(x)	// not defined anywhere within the scope - error
 
 newVar = Symbol("this is symbol")
 console.log(newVar)
