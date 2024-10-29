@@ -1,0 +1,1 @@
+global.connectionString = 'localhost:8080';
